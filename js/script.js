@@ -57,11 +57,11 @@ $(document).ready(function(){
             }
         }
         if(!prov && mail!=='' ){
-            $(mailFiled).addClass('popUp__input-required').siblings('.popUp__required').fadeIn().html(wrongData);
+            $(mailFiled).val('').addClass('popUp__input-required').siblings('.popUp__required').fadeIn().html(wrongData);
             error = true;
         }
         if(!prov1 && tel!==''){
-            $(telField).addClass('popUp__input-required').siblings('.popUp__required').fadeIn().html(wrongData);
+            $(telField).val('').addClass('popUp__input-required').siblings('.popUp__required').fadeIn().html(wrongData);
             error = true;
         }
         if(error){
